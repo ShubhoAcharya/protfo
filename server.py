@@ -17,7 +17,7 @@ def html_page(page_name):
 
 
 def write_to_file(data):
-    with open('./venv/database.txt', mode='a') as database:
+    with open('database.txt', mode='a') as database:
         email = data['email']
         subject = data['subject']
         message = data['message']
@@ -25,7 +25,7 @@ def write_to_file(data):
 
 
 def write_to_csv (data):
-    with open('./venv/database.csv', mode='a') as database2:
+    with open('database.csv', mode='a') as database2:
         email = data['email']
         subject = data['subject']
         message = data['message']
